@@ -14,12 +14,12 @@ export const Welcome = () => {
                     initial={{ opacity: 0, y: 20 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     viewport={{ once: true }}
-                    transition={{ duration: 1 , delay:.5 }} className="flex justify-center items-center gap-2 mb-8 md:mb-4">
+                    transition={{ duration: 1 , delay:.5 }} className="flex justify-center items-center gap-2 mb-8 ">
                     <UserPfp pfp={pfp} />
                     <p className="text-[#9CA3BD]">Trusted already by 1.2k+</p>
                 </motion.div>
                 <div className="flex flex-col justify-center items-center mb-12">
-                    <div className="text-4xl md:text-[4.2rem] font-semibold mb-6">
+                    <div className="text-4xl md:text-[4.2rem] font-semibold md:mb-12 md-6">
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}

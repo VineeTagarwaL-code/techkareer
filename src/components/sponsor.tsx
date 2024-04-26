@@ -133,7 +133,7 @@ export const InfiniteMovingCards = ({
             <ul
                 ref={scrollerRef}
                 className={cn(
-                    " flex min-w-full shrink-0 gap-8 py-4 w-max flex-nowrap",
+                    " flex min-w-full  gap-8 py-4 w-max flex-nowrap",
                     start && "animate-scroll ",
 
                 )}
@@ -143,8 +143,7 @@ export const InfiniteMovingCards = ({
                         key={idx}
                         src={item}
                         alt="testimonials"
-                        width={300}
-                        height={300}
+                        width={350}
                         className="rounded-xl"
                     />
                 ))}
