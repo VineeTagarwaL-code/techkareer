@@ -14,9 +14,9 @@ export const Navbar = () => {
             initial={{ opacity: 0 }} // Set initial opacity to 0
             animate={{ opacity: 1 }} // Animate opacity to 1
             transition={{ duration: 0.8 }}
-            className="flex  justify-between items-center w-[1300px] px-6 ml-8">
+            className="flex  justify-between items-center w-[1300px] px-6 ml-8  ">
                 <h1 className="text-xl font-bold ">TechKareer</h1>
-                <div className="flex flex-row justify-center items-center gap-4">
+                <div className="md:flex flex-row justify-center items-center gap-4 hidden">
                     {
                         NavLinks.map((link, index) => (
                             <Link 
