@@ -10,7 +10,7 @@ export const Oppurtunities = () => {
     return (
         <SectionWrapper>
             <div className="flex gap-4 flex-nowrap relative flex-col lg:flex-row">
-                <div className="w-full lg:w-[30%] flex flex-col gap-3 " >
+                <div className="w-full lg:w-[30%] flex flex-col gap-3 mb-8" >
                     <h3 className="bg-gradient-to-r from-blue-400 via-ping-200 to-pink-400 inline-block text-transparent bg-clip-text">Opportunities</h3>
                     <div className="text-3xl w-full font-semibold">
                         <span>Explore</span><br />
@@ -57,9 +57,10 @@ type oppurtunitiesCardProps = {
 }
 const OppurtunitiesCard: React.FC<oppurtunitiesCardProps> = ({ company, logo, position, payRange, features }) => {
     return (
+
         <div
             style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
-            className="rounded-2xl p-4 w-[429px] h-[501px]   flex flex-col gap-4"
+            className="rounded-2xl p-4 w-[390px] md:w-[420px] h-[501px]   flex flex-col gap-4"
         >
             <div className="flex justify-start items-center gap-2">
                 <Image
