@@ -5,11 +5,16 @@ import { usePathname } from "next/navigation"
 import Link from "next/link"
 import {motion} from "framer-motion"
 import { cn } from "@/lib/utils"
+
 export const Navbar = () => {
   let pathname = usePathname() || "/";
     return (
         <nav className="w-full h-fit py-9 flex justify-center items-center">
-            <div className="flex  justify-between items-center w-[1300px] px-6 ml-8">
+            <motion.div
+            initial={{ opacity: 0 }} // Set initial opacity to 0
+            animate={{ opacity: 1 }} // Animate opacity to 1
+            transition={{ duration: 0.8 }}
+            className="flex  justify-between items-center w-[1300px] px-6 ml-8">
                 <h1 className="text-xl font-bold ">TechKareer</h1>
                 <div className="flex flex-row justify-center items-center gap-4">
                     {
@@ -32,7 +37,7 @@ export const Navbar = () => {
                 >
                     <p>GET STARTED</p>
                 </motion.button>
-            </div>
+            </motion.div>
         </nav>
     )
 }

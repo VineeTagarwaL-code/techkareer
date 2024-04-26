@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/navbar";
-import { Testimonials } from "@/components/testimonials";
 import { Welcome } from "@/components/welcome";
 import { InfiniteMovingCards } from "@/components/infinite-card";
 import testimonials from "@/assets/testimonials/testimonials"
