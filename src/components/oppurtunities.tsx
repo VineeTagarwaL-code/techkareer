@@ -60,7 +60,7 @@ const OppurtunitiesCard: React.FC<oppurtunitiesCardProps> = ({ company, logo, po
 
         <div
             style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
-            className="rounded-2xl p-4 w-[390px] md:w-[420px] h-[501px]   flex flex-col gap-4"
+            className="rounded-2xl p-4 w-[340px] md:w-[420px] h-[501px]   flex flex-col gap-4"
         >
             <div className="flex justify-start items-center gap-2">
                 <Image
@@ -79,7 +79,7 @@ const OppurtunitiesCard: React.FC<oppurtunitiesCardProps> = ({ company, logo, po
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.4,delay:.2, ease: "easeInOut" }}
                  viewport={{ once: true }}
-                className="text-3xl mt-2  w-[80%] text-black/80 text-center font-lighter font-bold tracking-wider leading-6">{payRange}</motion.p>
+                className="text-2xl md:text-3xl mt-2  w-[80%] text-black/80 text-center font-lighter font-bold tracking-wider leading-6">{payRange}</motion.p>
             </div>
             <div>
                 {
@@ -90,10 +90,10 @@ const OppurtunitiesCard: React.FC<oppurtunitiesCardProps> = ({ company, logo, po
                         transition={{ duration: 0.8, delay:.2,ease: "easeInOut" }}
                         viewport={{ once: true }}
                         key={index} className="flex justify-center items-start gap-4 flex-col px-4 py-6">
-                            <p className="text-lg font-semibold text-black/70"><CircleCheck className="inline-block" /> {item.location}</p>
-                            <p className="text-lg font-semibold text-black/70"><CircleCheck className="inline-block" /> {item.date}</p>
-                            <p className="text-lg font-semibold text-black/70"><CircleCheck className="inline-block" /> {item.id}</p>
-                            <p className="text-lg font-semibold text-black/70"><CircleCheck className="inline-block" /> {item.jobType}</p>
+                            <p className="text-lg font-semibold text-black/70 flex justify-start items-center gap-2"><CircleCheck className="inline-block" /> <span>{item.location}</span></p>
+                            <p className="text-lg font-semibold text-black/70 flex justify-start items-center gap-2"><CircleCheck className="inline-block" /> <span>{item.date}</span></p>
+                            <p className="text-lg font-semibold text-black/70 flex justify-start items-center gap-2"><CircleCheck className="inline-block" /> <span>{item.id}</span></p>
+                            <p className="text-lg font-semibold text-black/70 flex justify-start items-center gap-2"><CircleCheck className="inline-block" /> <span>{item.jobType}</span></p>
                         </motion.div>
                     ))
                 }
