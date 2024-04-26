@@ -18,13 +18,13 @@ export const Sponsor = () => {
                         transition={{ duration: 0.5, delay: .5, ease: "easeInOut" }}
 
                         viewport={{ once: true }}
-                        className="text-5xl text-white z-[22] opacity-100 mb-5">Become a sponsor</motion.h3>
+                        className="text-3xl md:text-5xl text-white z-[22] opacity-100 mb-5">Become a sponsor</motion.h3>
                     <motion.p
                         initial={{ opacity: 0, y: 20, scale: 0.7 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ duration: 0.5, delay: .8, ease: "easeInOut" }}
                         viewport={{ once: true }}
-                        className="text-white w-[30%] text-center mb-5">Grow your reach by supporting the us and show to more than 20k people who you are. </motion.p>
+                        className="text-white w-[80%] md:w-[30%] text-center mb-5">Grow your reach by supporting the us and show to more than 20k people who you are. </motion.p>
                     <motion.button
                         initial={{ opacity: 0, y: 20, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
