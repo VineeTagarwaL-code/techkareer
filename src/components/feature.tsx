@@ -8,9 +8,9 @@ export const Feature = () => {
     return (
         <SectionWrapper>
             <div className="flex justify-center items-center flex-col">
-                <h3 className="bg-gradient-to-r from-blue-400 via-ping-200 to-pink-400 inline-block text-transparent bg-clip-text">included</h3>
-                <h2 className="text-3xl tracking-wide mt-4 text-center mb-10">Powerful features tailored to your needs</h2>
-                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4  ">
+                <h3 className="self-end bg-gradient-to-r from-blue-400 via-ping-200 to-pink-400 inline-block text-transparent bg-clip-text">included</h3>
+                <h2 className="self-end text-3xl tracking-wide mt-4 text-center mb-16">Powerful features tailored to your needs</h2>
+                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 ">
                     {feature.map((item, index) => (
                         <FeatureCard
                             key={index}

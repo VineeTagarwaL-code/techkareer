@@ -24,7 +24,7 @@ export const Oppurtunities = () => {
                         viewport={{ once: true }}
                         className="text-xs text-gray-200/50">Become part of dynamic and innovative team - Unlock your potential in a collaborative environment driven by excellence.</motion.p>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center ">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center ">
                     {oppurtunitiesArray.map((item, index) => (
                         <OppurtunitiesCard
                             key={index}
@@ -60,7 +60,7 @@ const OppurtunitiesCard: React.FC<oppurtunitiesCardProps> = ({ company, logo, po
 
         <div
             style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
-            className="rounded-2xl p-4 w-[340px] md:w-[420px] h-[501px]   flex flex-col gap-4"
+            className="rounded-2xl p-4 w-[340px] md:min-w-[390px] lg:max-w-[420px] lg:min-w-[390px] h-[501px]   flex flex-col gap-4"
         >
             <div className="flex justify-start items-center gap-2">
                 <Image
