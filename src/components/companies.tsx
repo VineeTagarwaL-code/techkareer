@@ -75,7 +75,7 @@ export const Companies = () => {
           animate={scrollDirection === 'up' ? 'down' : 'visible' || scrollDirection === 'down' ? 'up' : 'visible'}
           exit="hidden"
           variants={variants}
-          className="flex flex-col gap-2"
+          className="md:flex flex-col gap-2 hidden"
         >
           <Image src={c5} alt="company1" width={300} height={300} />
           <Image src={c6} alt="company2" height={300} width={300} />
@@ -88,7 +88,7 @@ export const Companies = () => {
           animate={scrollDirection === 'up' ? 'up' : 'visible'|| scrollDirection === 'down' ? 'down' : 'visible'}
           exit="hidden"
           variants={variants}
-          className="flex flex-col gap-2"
+          className="md:flex flex-col gap-2 hidden"
         >
           <Image src={c8} alt="company2" height={300} width={300} />
           <Image src={c7} alt="company1" width={300} height={300} />
